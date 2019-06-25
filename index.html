@@ -1,0 +1,58 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: layoute_pagina_principal
+---
+
+<h1> Curso JS </h1>
+O site está começando a tomar forma.
+
+<div id = "posts_js"></div>
+
+<H1> Cursos Git</H1>
+
+<div id = "posts_git"></div>
+
+
+<h1> Cursos Python </h1>
+
+
+<div id = "posts_py"></div>
+
+
+<script>
+
+
+
+    componente_cartoes_js = new printando_na_tela( document.getElementById("posts_js"))
+    
+    fetch( "/js/topicos.json")
+      .then((resp) => resp.json()) // Transform the data into json
+      .then(function(data) {
+        componente_cartoes_js.mostra_interface(data)
+        // Create and append the li's to the ul
+        }),
+
+        componente_cartoes_git = new printando_na_tela( document.getElementById("posts_git"))
+    
+    fetch( "/git/topicos.json")
+      .then((resp) => resp.json()) // Transform the data into json
+      .then(function(data) {
+        componente_cartoes_git.mostra_interface(data)
+        // Create and append the li's to the ul
+        })
+
+
+        componente_cartoes_py = new printando_na_tela( document.getElementById("posts_py"))
+    
+    fetch( "/py/topicos.json")
+      .then((resp) => resp.json()) // Transform the data into json
+      .then(function(data) {
+        componente_cartoes_py.mostra_interface(data)
+        // Create and append the li's to the ul
+        })
+    
+    
+    
+    </script>
