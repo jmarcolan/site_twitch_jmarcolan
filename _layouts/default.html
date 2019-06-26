@@ -14,49 +14,120 @@
 </head>
 <body>
     <header>
-        <nav id="navbar" class="nav">
-            <input type="checkbox" id="nav-check" />
-			<div class="nav-header">
-				<div class="nav-title">
-					<a href="/">Prof Marcolan</a>
-			    </div>
-			</div>
-			<div class="nav-btn">
-				<label for="nav-check">
-					<span ></span>
-					<span ></span>
-                    <span ></span>
-				</label>
+            <div class="header-bg">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                        <nav id="navbar" class="nav">
+                                <input type="checkbox" id="nav-check" />
+                                <div class="nav-header">
+                                    <div class="nav-title">
+                                        <a href="/">Prof Marcolan</a>
+                                    </div>
+                                </div>
+                                <div class="nav-btn">
+                                    <label for="nav-check">
+                                        <span ></span>
+                                        <span ></span>
+                                        <span ></span>
+                                    </label>
+                                </div>
+                        <div class='nav-links'>
+                                <a href="/">Home</a>
+                                <a href="#">HTML/CSS</a>
+                                <a href="/tag/JavaScript">JavaScript</a>
+                                <a href="/tag/git">Git</a>
+                                <a href="/tag/python">Python</a>
+                            </div>
+                        </nav>
+
+
+                </div>
+                   
+                
+
             </div>
-            <div class='nav-links'>
-                <a href="/">Home</a>
-                <a href="#">HTML/CSS</a>
-                <a href="/tag/JavaScript">JavaScript</a>
-                <a href="/tag/git">Git</a>
-                <a href="/tag/python">Python</a>
-            </div>
-        </nav>
+
+           
 
         <div id="header-content" >
-            <div class="header-bg">
-                <div class="title">
-                    <h1>Professor Marcolan</h1>
-                </div>
-            </div>
+            
+                <div class="container"> 
+                    <div class="row">
+                            <div class="title">
+                                    <h1>Professor Marcolan</h1>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+
+                        </div>
+
+                        <div class="col">
+                                <div class="twitch_acertar img-fluid"> 
+                                <div id="twitch-embed"></div>
+
+                                <!-- Load the Twitch embed script -->
+                                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                            
+                                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                                <script type="text/javascript">
+                                  new Twitch.Embed("twitch-embed", {
+                                    width: 453,
+                                    height: 300,
+                                    channel: "jmarcolan",
+                                    layout: "video"
+                                  });
+                                </script>
+
+                                </div>
+
+                        </div>
+
+
+                    </div>
+
+                <div class="row"> </div>
+                
+        </div>
         </div>
     </header>
 
-    <div id="content">
-    <section>
-        <header>
-            <h1>{{ page.title }}</h1>
-        </header>
-        <article>
-            {{ content }}
-        </article>
-        <span>Autor</span>
-    </section>
-    </div>
+    <div class="header">
+            <div class="row">
+              <div class="col-md-9">
+                    <div class="content">
+                            <section>
+                                <header>
+                                    <h1>{{ page.title }}</h1>
+                                </header>
+                                <article>
+                                    {{ content }}
+                                </article>
+                                <span>Autor</span>
+                            </section>
+                            </div>
+
+              </div>
+              <div class="col-md-3">
+                  <div class="content">
+                        <section>
+                                <ul>
+                                    <li>oi mundo essa é a uma nova section</li>
+                                </ul>
+                        </section>
+    
+                    
+                  </div>
+                    
+              </div>
+            </div>
+        </div>
+
+   
+    
+   
+        
     
 
     <footer>

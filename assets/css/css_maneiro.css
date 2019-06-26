@@ -49,14 +49,22 @@
 #nav-check {
 	display: none;
 }
+.twitch_acertar{
+	margin-bottom: 20px;
+	margin-left: 100px;
+}
+#coruja{
+	/* margin-top: 100px; */
+	max-height: 310px;
+}
 
 .header-bg {
-	background-image: url('../figuras/header_bg.svg');
+	background-image: url('../figuras/header_site.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	height: 51.6vh;
+	/* height: 51.6vh; */
 }
 
 .header-bg .title {
@@ -66,19 +74,19 @@
 
 /* Fim header */
 
-#content {
+.content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
-#content section {
+.content section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 70%;
+	width: 100%;
 	/* height: 60vh; */
 	background: #f3f3f3;
 }
