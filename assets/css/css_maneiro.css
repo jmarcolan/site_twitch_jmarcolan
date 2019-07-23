@@ -461,6 +461,7 @@ p--center {
     -webkit-box-align: center;
     align-items: center;
     width: 100%;
+    min-width: 800px
 }
 
 
@@ -487,6 +488,7 @@ p--center {
     cursor: pointer;
     background: #fff;
     width: 60%
+    min-width: 300px
 }
 
 @media screen and (min-width: 700px) {
