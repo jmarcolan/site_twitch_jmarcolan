@@ -1,24 +1,10 @@
 ---
-# secolar apresentacao entra no modo apresentacao e tudo que esta na calsse paragrafo vira 
 layout: post
 title:  polimorfismo-em-python
 date:   2019-03-22 11:30:22 -0300
 author: "João Antônio Marcolan"
 categories: jekyll update python variaveis
 permalink: polimorfismo-em-python
-
-code:
-    path_original: "/py/aula-3"
-    codes:
-      - path: "/src/codigo1.py"
-        id: "pythonCode-1"
-        numero: 1
-      - path: "/src/codigo1.py"
-        id: "pythonCode-2"
-        numero: 2
-      - path: "/src/codigo1.py"
-        id: "pythonCode-3"
-        numero: -1
 
 seletor: py
 video:
@@ -242,24 +228,7 @@ image-intro:
         </ul>
       </div>
 
-      <div class="paragrafo">
-        <div>
-
-          <!-- como passa variavel para o includ a font : https://jekyllrb.com/docs/includes/#passing-parameter-variables-to-includes -->
-          {% capture download_note %}
-          {{ page.code.codes[0].path }}
-          {% endcapture %}
-          {% include codegos.html path= download_note id="pythonCode-1" %}
-        </div>
-
-        <div>
-          {% include codegos.html id="pythonCode-2" path= "src/code1.py" %}
-        </div>
-
-        <div>
-          {% include codegos.html id="pythonCode-3" path= "src/code1.py" %}
-        </div>
-      </div>
+  
 
 
 
