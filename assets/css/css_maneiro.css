@@ -17,6 +17,27 @@ body {
     align-items: center;
 }
 
+.section__logo {
+    
+}
+
+.section__description {
+    font-size: 1.8rem;
+}
+
+.section__description {
+    font-size: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 50px;
+   -webkit-box-direction: normal;   /* tenta sair e entrar de novo na sessão, rodrigo */
+    flex-direction: column;
+    font-weight: 500;
+    padding: 0 4rem;
+}
+
 .div_center {
     margin: auto;
     width: 50%;
@@ -340,23 +361,12 @@ body {
 .section {
     width: 100%;
     height: 100%;
-    padding: 1rem 0;
-    -webkit-box-pack: center;
     justify-content: center;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#fff), to(#fff));
-    background-image: linear-gradient(to bottom right, #fff, #fff);
-    display: none;
 }
 
 .section.active {
-    display: -webkit-box;
     display: flex;
 }
 
@@ -380,24 +390,7 @@ body {
     display: none;
 }
 
-.section__logo {
-    background-image: url("../../img/twitch-logo.png");
-    background-size: cover;
-    width: 17rem;
-    height: 5.8rem;
-    margin: 15rem 0 1rem 0;
-}
 
-.section__description {
-    font-size: 1.8rem;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    font-weight: 500;
-    padding: 0 4rem;
-}
 /* mechendo no formato do texto  */
 
 h2{
@@ -421,10 +414,6 @@ p {
 
 p:last-child {
     padding-bottom: 20rem;
-}
-
-p:not(:last-child) {
-    margin-bottom: 3rem;
 }
 
 p--center {
