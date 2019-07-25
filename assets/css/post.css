@@ -1,0 +1,111 @@
+
+.post__bgimage {
+    width: 100%;
+    top: 5.5rem;
+    height: 40rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid rgba(32,28,43,0.9);
+    box-shadow: 2px 2px 7px #201c2b;
+}
+
+.post__bgimage::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(32,28,43,0.2)), to(rgba(32,28,43,0.8)));
+    background-image: linear-gradient(rgba(32,28,43,0.2), rgba(32,28,43,0.8));
+}
+
+.post__bgimage--post-descartes {
+    background-image: url("https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
+
+.post__title {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    z-index: 1;
+    text-align: center;
+}
+
+.post__container {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 28rem;
+}
+
+
+.post__photo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #fff;
+    position: absolute;
+}
+
+.post__photo--author {
+    background-image: url("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE1ODA0OTcxMjY3MzYwMjY5/rene-descartes-37613-1-402.jpg");
+}
+
+.post__author-name,.post__date {
+    position: relative;
+    font-size: 1.6rem;
+    z-index: 1;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    top: 6rem;
+}
+
+.post__author-name {
+    font-weight: 500;
+}
+
+.post__date {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.post__position {
+    margin-top: 15rem;
+}
+
+.post__paragraph {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.post__paragraph:last-child {
+    margin-bottom: 25rem;
+}
+
+.post__paragraph::first-letter {
+    text-transform: uppercase;
+}
+
+.post__big-letter::first-letter {
+    font-size: 5rem;
+    color: #2E293C;
+    float: left;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}

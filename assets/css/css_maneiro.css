@@ -17,27 +17,38 @@ body {
     align-items: center;
 }
 
-.section__logo {
-    
-}
+
 
 .section__description {
-    font-size: 1.8rem;
-}
-
-.section__description {
-    font-size: 2.8rem;
-    display: flex;
+    position: absolute;
+    color: white; 
     flex-direction: column;
     font-weight: 500;
     text-align: center;
-    padding-top: 50px;
-   -webkit-box-direction: normal;   /* tenta sair e entrar de novo na sessão, rodrigo */
+   -webkit-box-direction: normal;   
     flex-direction: column;
-    font-weight: 500;
-    padding: 0 4rem;
+    top: 13rem;
+    width: 80vw;
 }
+@media screen and (max-width: 768px) {
+    .section__description {
+        position: unset;
+        color: black; 
+        flex-direction: column;
+        font-weight: 500;
+        text-align: center;
+       -webkit-box-direction: normal;   
+        flex-direction: column;
+        width: 80vw;
+    }
 
+    .div-container {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-content: center;
+    }
+}
 .div_center {
     margin: auto;
     width: 50%;
@@ -124,19 +135,13 @@ body {
 .footer {
     height: 10rem;
     background: #201C2B;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
-    bottom: 0;
-    position: absolute;
     width: 100%;
 }
 
 .footer__nav-list {
-    display: -webkit-box;
     display: flex;
     list-style: none;
 }
@@ -183,7 +188,6 @@ body {
 
 .header {
     background: #fff;
-    width: 100vw;
     border-bottom: 1px solid #201C2B;
     box-shadow: 1px 1px 5px #201C2B;
     -webkit-transition: all .3s;
@@ -450,24 +454,12 @@ p--center {
     transform: translate(-5px, -5px);
 }
 
-.card-container {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    min-width: 800px;
-}
-
-
 
 @media screen and (min-width: 1600px) {
     .card-container {
         -webkit-box-pack:justify;
         justify-content: space-between;
-        width: 110rem;
+        /* width: 110rem; */
         -webkit-box-orient: initial;
         -webkit-box-direction: initial;
         flex-direction: initial;
@@ -476,7 +468,7 @@ p--center {
 }
 
 .card {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     height: 35rem;
     border: 2px solid #201C2B;
     position: relative;
@@ -486,8 +478,30 @@ p--center {
     background: #fff;
     width: 60%;
     min-width: 300px;
+    max-width: 300px;
+    /* max-width: 500px;
+    min-height: 350px;
+    max-height: 400px; */
+
 }
 
+.post-content-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#todos-titulos {
+    font-size:16px;
+}
+#todos-titulos a {
+    color:black;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+#todos-titulos a:hover {
+    border-bottom:3px solid gray;
+}
 @media screen and (min-width: 700px) {
     .card {
         width:30%;
@@ -534,6 +548,7 @@ p--center {
     background-position: center;
     background-size: cover;
     border-bottom: 2px solid #201C2B;
+
 }
 
 .card__img--full {
@@ -736,27 +751,32 @@ p--center {
     border: 2px solid #2E293C;
     padding: .5rem 2rem;
 }
-
-#twitch-embed {
+    
+#twitch-embed {    
     padding: .5rem;
-    margin: 10rem 0 35rem 0;
+    margin: 3rem 0 10rem 0;
     background: #161625;
     border-radius: 3px;
 }
 
+#twitch-embed iframe {    
+    width: 80vw;
+    height: 75vh;
+}
+
 .div-container {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .container_flex{
     display: flex;
 }
 
-.post {
-    
-}
+
 
 .post-title {
     margin: 10rem 0 5rem 0;
@@ -773,6 +793,7 @@ p--center {
     display: flex;
     
     justify-content: space-between;
+    
    
     align-items: center;
     border-bottom: 1px solid #201C2B;
@@ -782,24 +803,15 @@ p--center {
 }
 
 .post-content {
-    /* Aqui tava faltando larggura do container */
     width: 100%;
-    /* Aqui os items ficam em linha */
-    display: flex;
-    /* Aqui se os items forem maior que a box eles quebram pra linha de baixo */
-
-    justify-content: space-between;
-    
-    
-    
+    display: flex;    
 }
 
 .post-content:not(:last-child){ margin-right: 10px}
 
 .post-content-content{
     
-    flex: 3;
-    width: 100%;
+    width: 70%;
     height: auto;
     margin: 0px;
     padding: 0px;
@@ -813,11 +825,15 @@ p--center {
     
 }
 
+#todos-titulos li {
+    padding:10px 0;
+}
+.video-container img {
+    height: 400px;
+}
 
 .post-content-navegador{
-    flex: 1;
     width: 100%;
-    height: auto;
     margin: 0px;
     padding: 0px;
     font-size: 1.6rem;
@@ -873,6 +889,8 @@ img { width: 100%; height: auto; }
 ul {
     list-style: none;
     font-family: Raleway,sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
+}
+
+div#twitch-embed {
+    padding: 5% 0;
 }

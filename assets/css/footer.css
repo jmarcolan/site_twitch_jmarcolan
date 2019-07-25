@@ -1,0 +1,59 @@
+.footer {
+    height: 10rem;
+    background: #201C2B;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footer__nav-list {
+    display: -webkit-box;
+    display: flex;
+    list-style: none;
+}
+
+.footer__nav-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.footer__nav-link {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.footer__nav-link .fab,.footer__nav-link .fas {
+    padding: 1rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.footer__nav-link .fab:hover,.footer__nav-link .fas:hover {
+    -webkit-transform: translateY(0.5rem);
+    transform: translateY(0.5rem);
+}
+
+.footer__nav-link .fa-github:hover {
+    color: #000;
+}
+
+.footer__nav-link .fa-discord:hover {
+    color: #6F85D4;
+}
+
+.footer__nav-link .fa-twitch:hover {
+    color: #6441A4;
+}
+
+.footer__nav-link .fa-facebook-square:hover {
+    color: #3B589C;
+}
+
+.footer__nav-link .fa-envelope:hover {
+    color: #E1584B;
+}

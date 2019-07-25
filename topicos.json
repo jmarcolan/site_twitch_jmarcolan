@@ -17,8 +17,8 @@
     },
     {
         "id": 1,
-        "post_title": "Python como fazer webscraping",
-        "post_des": "como criar variaveis, tipos de variavies",
+        "post_title": "Python, site legado",
+        "post_des": "Aulas consolidadas de python que estavam presente no nosso antigo site.",
         "imagem_front": "/py/1-atom-ide-para-python-gratis/imagem_inicial.jpg",
         "url": "/atom-ide-para-python-gratis",
         "seo": ["git","github","como instalar o git"]
@@ -35,14 +35,6 @@
         "id": 1,
         "post_title": "JavaScript, react",
         "post_des": "Nesse curso aprendemos a pegar uma certa quantidade de dados de uma aplicação REST e construimos cards",
-        "imagem_front": "/py/1-atom-ide-para-python-gratis/imagem_inicial.jpg",
-        "url": "/atom-ide-para-python-gratis",
-        "seo": ["git","github","como instalar o git"]
-    },
-    {
-        "id": 1,
-        "post_title": "JavaScript, react",
-        "post_des": "como criar variaveis, tipos de variavies",
         "imagem_front": "/py/1-atom-ide-para-python-gratis/imagem_inicial.jpg",
         "url": "/atom-ide-para-python-gratis",
         "seo": ["git","github","como instalar o git"]

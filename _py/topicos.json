@@ -1,13 +1,12 @@
 [
     {
         "id": 1,
-        "post_title": "Atom",
-        "post_des": "como criar variaveis, tipos de variavies",
+        "post_title": "Atom, ambiente de desenvolvimento do python ",
+        "post_des": "Neste tutorial mostraremos os 7 principais plugins que você deve ter para tornar o Atom IDE para Python. Incluindo um plug-in para preencher automaticamente o código Python no editor de texto do Atom. Além disso, mostraremos como configurar o editor de texto do Atom para usar no Python. Com esses plugins, o Atom se torna um dos melhores IDES para Python.",
         "imagem_front": "/py/1-atom-ide-para-python-gratis/imagem_inicial.jpg",
         "url": "/atom-ide-para-python-gratis",
         "seo": ["git","github","como instalar o git"]
     },
-
     {
         "id": 3,
         "post_title": "Encapsulamento do python",

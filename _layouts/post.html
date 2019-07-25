@@ -11,30 +11,21 @@ layout: default
   
     <div class="section__container">
       <article class="post">
-        <!-- Aqui o título principal - deve estar dentro do article (semântica, acessibilidade) -->
-        <h1 class="post-title">{{page.title}}</h1>
-  
-        <header class="post-header">
-          <!-- Lista de Tópicos -->
-          <p>
-              <ul id="todos-titulos" onload="pegar_titulos()"></ul>
-            </p>
-  
-          <!-- Vídeo -->
+         <h1 class="post-title">{{page.title}}</h1>
+
+          <header class="post-header">
+
+            
          
           <div class="video-container">
-                {% if page.video.ligado == true %}
-                <iframe width="560" height="315" src="{{page.video.url}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                {% elsif page.image-intro.ligado == true %}
-
-               
-                <img src="{{page.image-intro.url}}" class="img-fluid" alt="">
-                
-                  {% endif %}
+              {% if page.video.ligado == true %}
+              <iframe src="{{page.video.url}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              {% elsif page.image-intro.ligado == true %}
+              <img src="{{page.image-intro.url}}" alt="">
+              {% endif %}
           </div>
-
-          
-        </header>
+         
+          </header>
 
         <div class="post-content">
 
@@ -42,20 +33,48 @@ layout: default
                   {{content}}
             </div>
 
+            <div class="post-content-sidebar">
+
             <div class="post-content-navegador">
                 <ul>
                     <li>Tópico 1</li>
                     <li>Tópico 2</li>
                     <li>Tópico 3</li>
                     <li>Tópico 4</li>
-            </ul>
+                </ul>
             </div>
-    
+
+            <div class="post-content-navegador">
+              <ul>
+                  <li>Tópico 1</li>
+                  <li>Tópico 2</li>
+                  <li>Tópico 3</li>
+                  <li>Tópico 4</li>
+              </ul>
+           </div>
+
+           <div class="post-content-navegador">
+              <ul>
+                  <li>Tópico 1</li>
+                  <li>Tópico 2</li>
+                  <li>Tópico 3</li>
+                  <li>Tópico 4</li>
+              </ul>
+           </div>
+
+           <div class="post-content-navegador">
+              <ul>
+                  <li>Tópico 1</li>
+                  <li>Tópico 2</li>
+                  <li>Tópico 3</li>
+                  <li>Tópico 4</li>
+              </ul>
+           </div>
+
+          </div>
+
         </div>
 
- 
-        
-        
       </article>
     </div>
 
